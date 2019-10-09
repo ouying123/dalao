@@ -1,11 +1,14 @@
 package com.edu.huatec.oy1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+
+import java.time.Instant;
 
 public class splash_activity extends AppCompatActivity {
     @Override
@@ -28,6 +31,9 @@ animation.setAnimationListener(new Animation.AnimationListener() {
     @Override
     public void onAnimationEnd(Animation animation) {
 
+        Intent intent=new Intent(splash_activity.this,MainActivity.class);
+        startActivity(intent);
+       finish();
     }
 
     @Override
