@@ -31,7 +31,7 @@ animation.setAnimationListener(new Animation.AnimationListener() {
     @Override
     public void onAnimationEnd(Animation animation) {
 
-        Intent intent=new Intent(splash_activity.this,MainActivity.class);
+        Intent intent=new Intent(splash_activity.this,AdApplication.class);
         startActivity(intent);
        finish();
     }
