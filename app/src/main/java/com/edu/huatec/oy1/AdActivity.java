@@ -7,9 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import java.util.logging.Handler;
-
-public class AdApplication extends AppCompatActivity {
+public class AdActivity extends AppCompatActivity {
     TextView ad;
 
     @Override
@@ -36,7 +34,7 @@ new Thread(new Runnable() {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                Intent intent=new Intent(AdApplication.this,MainActivity.class);
+                Intent intent=new Intent(AdActivity.this,MainActivity.class);
                 startActivity(intent);
                 fileList();
             }

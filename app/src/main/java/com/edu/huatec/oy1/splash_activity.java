@@ -8,8 +8,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-import java.time.Instant;
-
 public class splash_activity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,7 +29,7 @@ animation.setAnimationListener(new Animation.AnimationListener() {
     @Override
     public void onAnimationEnd(Animation animation) {
 
-        Intent intent=new Intent(splash_activity.this,AdApplication.class);
+        Intent intent=new Intent(splash_activity.this, AdActivity.class);
         startActivity(intent);
        finish();
     }
